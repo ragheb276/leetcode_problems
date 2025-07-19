@@ -4,9 +4,9 @@ class Solution:
         return index1
     
 #----------------------------------------------------
-class Solution2:
+class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        if haystack < needle:
+        if len(haystack) < len(needle):
             return -1
         
         for i in range(len(haystack)):
